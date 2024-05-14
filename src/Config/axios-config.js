@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:5000/',
+    baseURL: 'https://password-reset-api-lvc7.onrender.com/',
 });
 
 

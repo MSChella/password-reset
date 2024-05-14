@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import axios from '../../config/axios-config';
+import axios from '../../Config/axios-config';
 import '../RegistrationForm/style.css'
 
 const SignUp = () => {
