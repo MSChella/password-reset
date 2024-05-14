@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import axiosInstance from '../../Config/axios-config';
 
 const SignIn = () => {
     const [username, setUsername] = useState('');
@@ -9,7 +11,7 @@ const SignIn = () => {
     const handleSignin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('api/auth/signin', { username, password });
+            const response = await axiosInstance.post('api/auth/signin', { username, password });
             console.log('Signin successful:', response.data);
 
             localStorage.setItem('token', response.data.token)

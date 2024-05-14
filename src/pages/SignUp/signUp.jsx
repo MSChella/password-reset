@@ -7,6 +7,7 @@ import axios from '../../Config/axios-config';
 const SignUp = () => {
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
+    // const [aadharNo, setAadharNo] = useState('');
 
 
     const navigate = useNavigate();
@@ -36,12 +37,12 @@ const SignUp = () => {
             console.error('Error registering user:', error);
         }
     };
-    const handleAadharChange = (e) => {
-        const aadharValue = e.target.value.replace(/\D/g, '');
-        if (aadharValue.length <= 10) {
-            setAadharNo(aadharValue);
-        }
-    };
+    // const handleAadharChange = (e) => {
+    //     const aadharValue = e.target.value.replace(/\D/g, '');
+    //     if (aadharValue.length <= 10) {
+    //         setAadharNo(aadharValue);
+    //     }
+    // };
 
     return (
         <div className="container mt-5" style={{ maxWidth: "800px" }}>
@@ -61,9 +62,6 @@ const SignUp = () => {
                                         Password:
                                         <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
                                     </label>
-
-
-
 
                                     <button class="btn btn-primary" type="submit">Submit For Registration</button></div>
                             </form>
