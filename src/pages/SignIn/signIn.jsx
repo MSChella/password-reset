@@ -5,7 +5,7 @@ import axiosInstance from '../../Config/axios-config';
 const SignIn = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [authenticated, setAuthenticated] = useState(!!localStorage.getItem('token'));
+    // const [authenticated, setAuthenticated] = useState(!!localStorage.getItem('token'));
 
     const navigate = useNavigate();
     const handleSignin = async (e) => {
