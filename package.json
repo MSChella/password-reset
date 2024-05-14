@@ -18,13 +18,40 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
+  },"eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "*.json"
+        ],
+        "rules": {
+          "no-unused-vars": "off"
+        }
+      }
+    ],
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
+  "rules": {
+    "no-unused-vars": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        " components": [
+          "App",
+          "Pages/SignIn/signIn",
+          "component/Header/Header",
+          "index"
+        ],
+        "specialLink": [
+          "#!"
+        ]
+      }
+    ]
+  },
+  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -36,5 +63,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.14.5"
+ 
   }
 }

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import style from '../Header/style.css'
+// import { useNavigate } from 'react-router-dom';
+// import style from '../Header/style.css'
 
 
 
 
 
 const Header = () => {
-    const [authenticated, setAuthenticated] = useState(!!localStorage.getItem('token'));
+    // const [authenticated, setAuthenticated] = useState(!!localStorage.getItem('token'));
 
 
 

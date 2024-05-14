@@ -19,7 +19,7 @@ export const removeToken = () => {
 
 // Axios instance with base URL and default headers
 const AxiosInstance = axios.create({
-    baseURL: 'http://localhost:3001/api', // Your backend API base URL
+    baseURL: 'https://password-reset-api-lvc7.onrender.com./api', // Your backend API base URL
     headers: {
         'Content-Type': 'application/json',
     },
