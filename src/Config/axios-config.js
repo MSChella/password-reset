@@ -1,5 +1,5 @@
 
-import { getToken } from '../utils/authUtils';
+import { getToken } from '../Utils/authUtils';
 import axios from 'axios';
 
 
